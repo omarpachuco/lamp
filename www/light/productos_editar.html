@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Responsive Admin Template" />
+	<meta name="author" content="SmartUniversity" />
+	<title>Panel de administración | Bayer Mi Cultivo</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/v6/css/all.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/plugins/summernote/summernote.css" rel="stylesheet">
+    <!-- data tables -->
+    <link href="../assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap5.min.css" rel="stylesheet"
+        type="text/css" />
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="../assets/css/material_style.css">
+	<!-- inbox style -->
+	<link href="../assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
+	<!-- Theme Styles -->
+	<link href="../assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" />
+</head>
+<!-- END HEAD -->
+
+<body
+class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md white-sidebar-color logo-indigo header-indigo">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo">
+							<a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
+								<img class="main-logo_top" src="../assets/img/logo_bayer_blanco.png" class="position-left" alt="">
+							</a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i data-feather="menu"></i></a></li>
+				</ul>
+				<!-- <form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form> -->
+				<!-- start mobile menu -->
+				<a class="menu-toggler responsive-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						<li><a class="fullscreen-btn"><i data-feather="maximize"></i></a></li>
+
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Irma
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="user_profile.html">
+										<i class="icon-user"></i> Perfil </a>
+								</li>
+								<li class="divider"> </li>
+								<li>
+									<a href="login.html">
+										<i class="icon-logout"></i> Cerrar Sesión </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false"
+							data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							<li class="sidebar-user-panel">
+								<div class="sidebar-user">
+									<div class="sidebar-user-picture">
+										<img alt="image" src="../assets/img/dp.jpg">
+									</div>
+									<div class="sidebar-user-details">
+										<div class="user-name">Irma Salinas</div>
+										<div class="user-role">Administrador</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="index.html" class="nav-link nav-toggle"> <i data-feather="airplay"></i>
+									<span class="title">Dashboard</span>
+								</a>
+							</li>
+							
+
+							<!-- USUARIOS -->
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"> <i data-feather="user"></i>
+									<span class="title">Administradores</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="administradores.html" class="nav-link "> <span class="title">Todos los administradores</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="administradores-nuevo.html" class="nav-link "> <span class="title">Agregar administradores</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<!-- Cultivos -->
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"> <i data-feather="sun"></i>
+									<span class="title">Cultivos</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="cultivos.html" class="nav-link "> <span class="title">Todos los cultivos</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="cultivos-nuevo.html" class="nav-link "> <span class="title">Agregar cultivo</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<!-- Productos -->
+							<li class="nav-item active">
+								<a href="#" class="nav-link nav-toggle"> <i data-feather="package"></i>
+									<span class="title">Productos</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="productos.html" class="nav-link "> <span class="title">Todos los productos</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="productos-nuevo.html" class="nav-link "> <span class="title">Agregar producto</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="productos-categorias.html" class="nav-link "> <span class="title">Categorias</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<!-- Distribuidores -->
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i data-feather="map-pin"></i>
+									<span class="title">Distribuidores</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="distribuidores.html" class="nav-link "> <span class="title">Todos los distribuidores</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="distribuidores-nuevo.html" class="nav-link "> <span class="title">Agregar distribuidor</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="distribuidores-estados.html" class="nav-link "> <span class="title">Estados</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+
+							<!-- reportees -->
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i data-feather="file-text"></i>
+									<span class="title">Reportes</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="reporte-usuarios.html" class="nav-link "> <span class="title">Usuarios</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="reporte-usuarios-cultivos.html" class="nav-link "> <span class="title">Usuarios y cultivos</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<!-- Opciones de sitio -->
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i data-feather="settings"></i>
+									<span class="title">Configurar</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="configurar-redes.html" class="nav-link "> <span class="title">Redes sociales</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="configurar-privacidad.html" class="nav-link "> <span class="title">Aviso de privacidad</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="configurar-terminos.html" class="nav-link "> <span class="title">Términos de Uso</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="configurar-general.html" class="nav-link "> <span class="title">General</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="configurar-versiones.html" class="nav-link "> <span class="title">Versiones</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- Opciones de sitio -->
+							<li class="nav-item">
+								<a href="#" class="nav-link nav-toggle"><i data-feather="mail"></i>
+									<span class="title">Plantillas de correo</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item">
+										<a href="plantillas-correo-encabezado.html" class="nav-link "> <span class="title">Encabezado y Pie de página</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="plantillas-correo-recordatorio.html" class="nav-link "> <span class="title">Recordatorio</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="plantillas-correo-recuperar-contrasena.html" class="nav-link "> <span class="title">Recuperar contraseña</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="plantillas-correo-registro-usuario.html" class="nav-link "> <span class="title">Registro de usuario</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="plantillas-correo-solicitud-informacion.html" class="nav-link "> <span class="title">Solicitud de información</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Adengo®</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Editar</li>
+							</ol>
+						</div>
+					</div>
+
+
+<!-- TABLA PRODUCTOS -->
+<div class="row">
+	<div class="col-md-12">
+        <div class="card card-box">
+            <div class="card-head">
+                <header>Información principal</header>
+            </div>
+            <div class="card-body" id="bar-parent">
+                <form action="#" id="form_sample_1" class="form-horizontal" novalidate="novalidate">
+                    <div class="form-body">
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">Nombre
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-5">
+                                <input type="text" name="firstname" data-required="1" placeholder="Nombre de producto" value="Adengo®" class="form-control input-height" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">Categoria
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-5">
+                                <select class="form-select input-height" name="department">
+                                    <option value="">Selecciona...</option>
+                                        <option value="" selected>Herbicidas</option>
+                                        <option value="">Fungicidas</option>
+                                        <option value="">Insecticidas</option>
+                                        <option value="">Regulador de crecimiento y Otros</option>
+                                        <option value="">Tratamiento de semillas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">Logotipo
+                            </label>
+                            <div class="col-md-5">
+                                <input type="file" class="default" multiple="">
+                                <img src="../assets/img/adengo_logo@2x.png" alt="">
+                            </div>
+
+                        </div>
+						<div class="form-group row">
+                            <label class="control-label col-md-3">Portada
+                            </label>
+                            <div class="col-md-5">
+                                <input type="file" class="default" multiple="">
+                                <img class="pt-3 img-mw_100" src="../assets/img/Adengo-bannerapp_2021.jpg" alt="">
+
+								<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-primary" data-type="dialog7" data-upgraded=",MaterialButton,MaterialRipple">CLICK ME<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 207.602px; height: 207.602px; transform: translate(-50%, -50%) translate(71px, 23px);"></span></span></button>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">Cultivos relacionados
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-5">
+                                <select class="form-select input-height" name="department">
+                                    <option value="">Selecciona...</option>
+                                    <option value="">Agave</option>
+                                    <option value="">Aguacatero</option>
+                                    <option value="">Ajo</option>
+                                    <option value="">Ajonjolí</option>
+                                    <option value="">Albahaca</option>
+                                    <option value="">Alcachofa</option>
+                                    <option value="">Alfalfa</option>
+                                    <option value="">Algodón</option>
+                                    <option value="">Almendra</option>
+                                    <option value="">Apio</option>
+                                    <option value="">Arándano</option>
+                                    <option value="">Arroz</option>
+                                    <option value="">Avellana</option>
+                                    <option value="">Avena</option>
+                                    <option value="">Banano</option>
+                                    <option value="">Berenjena</option>
+                                    <option value="">Brócoli</option>
+                                    <option value="">Cacahuate</option>
+                                    <option value="">Cacao</option>
+                                    <option value="">Cafeto</option>
+                                    <option value="">Calabacita</option>
+                                    <option value="">Calabaza</option>
+                                    <option value="">Caña</option>
+                                    <option value="">Cártamo</option>
+                                    <option value="">Cebada</option>
+                                    <option value="">Cebolla</option>
+                                    <option value="">Cebollín</option>
+                                    <option value="">Cempasúchil</option>
+                                    <option value="">Cerezo</option>
+                                    <option value="">Chabacano</option>
+                                    <option value="">Chayote</option>
+                                    <option value="">Chícharo</option>
+                                    <option value="">Chile</option>
+                                    <option value="">Chile habanero</option>
+                                    <option value="">Cilantro</option>
+                                    <option value="">Ciruelo</option>
+                                    <option value="">Cítricos</option>
+                                    <option value="">Col</option>
+                                    <option value="">Col de Bruselas</option>
+                                    <option value="">Coles</option>
+                                    <option value="">Coliflor</option>
+                                    <option value="">Colinabo</option>
+                                    <option value="">Crisantemo</option>
+                                    <option value="">Cucurbitáceas</option>
+                                    <option value="">Duraznero</option>
+                                    <option value="">Espárrago</option>
+                                    <option value="">Espinaca</option>
+                                    <option value="">Frambuesa</option>
+                                    <option value="">Fresa</option>
+                                    <option value="">Frijol</option>
+                                    <option value="">Frijol ejotero</option>
+                                    <option value="">Garbanzo</option>
+                                    <option value="">Gerbera</option>
+                                    <option value="">Grosella</option>
+                                    <option value="">Guayabo</option>
+                                    <option value="">Haba</option>
+                                    <option value="">Hierbabuena</option>
+                                    <option value="">Hinojo</option>
+                                    <option value="">Judía</option>
+                                    <option value="">Lechuga</option>
+                                    <option value="">Lenteja</option>
+                                    <option value="">Lily</option>
+                                    <option value="">Lima</option>
+                                    <option value="">Limón persa</option>
+                                    <option value="">Limonero</option>
+                                    <option value="">Macadamia</option>
+                                    <option value="">Maíz</option>
+                                    <option value="">Mandarina</option>
+                                    <option value="">Mango</option>
+                                    <option value="">Manzano</option>
+                                    <option value="">Melocotón</option>
+                                    <option value="">Melón</option>
+                                    <option value="">Membrillo</option>
+                                    <option value="">Menta</option>
+                                    <option value="">Mora</option>
+                                    <option value="">Naranjo</option>
+                                    <option value="">Nectarino</option>
+                                    <option value="">Níspero</option>
+                                    <option value="">Nogal</option>
+                                    <option value="">Nopal</option>
+                                    <option value="">Ornamentales</option>
+                                    <option value="">Palma de aceite</option>
+                                    <option value="">Papa</option>
+                                    <option value="">Papayo</option>
+                                    <option value="">Pastizales</option>
+                                    <option value="">Pepino</option>
+                                    <option value="">Peral</option>
+                                    <option value="">Perejil</option>
+                                    <option value="">Pimiento</option>
+                                    <option value="">Piña</option>
+                                    <option value="">Pistache</option>
+                                    <option value="">Puerro</option>
+                                    <option value="">Rábano</option>
+                                    <option value="">Romero</option>
+                                    <option value="">Rosal</option>
+                                    <option value="">Salvia</option>
+                                    <option value="">Sandía</option>
+                                    <option value="">Sorgo</option>
+                                    <option value="">Soya</option>
+                                    <option value="">Tabaco</option>
+                                    <option value="">Tangerino</option>
+                                    <option value="">Tejocote</option>
+                                    <option value="">Tomate</option>
+                                    <option value="">Tomate de cáscara</option>
+                                    <option value="">Tomillo</option>
+                                    <option value="">Toronja</option>
+                                    <option value="">Trigo</option>
+                                    <option value="">Triticale</option>
+                                    <option value="">Vainilla</option>
+                                    <option value="">Vid</option>
+                                    <option value="">Viveros</option>
+                                    <option value="">Zanahoria</option>
+                                    <option value="">Zarzamora</option>
+                                </select>
+                                <button type="button" class="mt-3 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-info" data-upgraded=",MaterialButton,MaterialRipple">Agregar<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 151.044px; height: 151.044px; transform: translate(-50%, -50%) translate(49px, 30px);"></span></span></button>
+                                <div class="col-12 mt-3">
+                                    <span class="mdl-chip mdl-chip--deletable">
+                                        <span class="mdl-chip__text">Maiz</span>
+                                        <button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card card-box">
+            <div class="card-head">
+                <header>Detalles</header>
+            </div>
+            <div class="card-body" id="bar-parent">
+                <form action="#" id="form_sample_1" class="form-horizontal" novalidate="novalidate">
+                    <div class="form-body">
+
+                        
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">¿Qué es?
+                            </label>
+                            <div class="col-md-5">
+								
+                                <textarea name="address" class="form-control-textarea" placeholder="Education" rows="5">Adengo® es un herbicida selectivo de aplicación preemergente que deja su cultivo de maíz libre de maleza desde la nacencia, gracias al control que ejerce sobre zacates y hojas anchas.
+
+Presentaciones: 250 y 300 mililitros.
+                                </textarea>
+
+								
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">¿Cómo Trabaja?	
+                            </label>
+                            <div class="col-md-5">
+                                <textarea name="address" class="form-control-textarea" placeholder="Education" rows="5">Actúa sobre la maleza antes de que nazca; y si la maleza logra emerger, muestra un blanqueamiento en sus hojas, síntoma de que está controlada.
+
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="control-label col-md-3">Beneficios	
+                            </label>
+                            <div class="col-md-5">
+                                <textarea name="address" class="form-control-textarea" placeholder="Education" rows="5">• Protege al cultivo en el periodo de mayor competencia con la maleza.• Controla maleza difícil y aquellas resistentes a herbicidas tradicionales.• Actúa sobre una gran variedad de zacates y hojas anchas.
+
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="offset-md-3 col-md-9">
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 m-r-20 btn-circle btn-primary" data-upgraded=",MaterialButton,MaterialRipple">Guardar<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-danger" data-upgraded=",MaterialButton,MaterialRipple">Cancelar<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</div>
+</div>
+
+<!-- TABLA PRODUCTOS -->
+
+
+
+
+					
+					
+					
+				</div>
+			</div>
+			<!-- end page content -->
+
+			
+		</div>
+		<!-- end page container -->
+		<!-- start footer -->
+		<div class="page-footer">
+			<div class="page-footer-inner"> 2022 &copy; Todos los derechos reservados
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	<!-- start js include path -->
+	<script src="../assets/plugins/jquery/jquery.min.js"></script>
+	<script src="../assets/plugins/popper/popper.js"></script>
+	<script src="../assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+	<script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<script src="../assets/plugins/feather/feather.min.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<script src="../assets/plugins/sparkline/jquery.sparkline.js"></script>
+	<script src="../assets/js/pages/sparkline/sparkline-data.js"></script>
+	<!-- data tables -->
+	<script src="../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="../assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap5.min.js"></script>
+	<script src="../assets/js/pages/table/table_data.js"></script>
+	<!-- counterup -->
+	<script src="../assets/plugins/counterup/jquery.waypoints.min.js"></script>
+	<script src="../assets/plugins/counterup/jquery.counterup.min.js"></script>
+	<!-- Common js-->
+	<script src="../assets/js/app.js"></script>
+	<script src="../assets/js/layout.js"></script>
+	<script src="../assets/js/theme-color.js"></script>
+	<!-- material -->
+	<script src="../assets/plugins/material/material.min.js"></script>
+	<!--apex chart-->
+	<script src="../assets/plugins/apexcharts/apexcharts.min.js"></script>
+	<script src="../assets/js/pages/chart/apex/home-data.js"></script>
+	<!-- summernote -->
+	<script src="../assets/plugins/summernote/summernote.js"></script>
+	<script src="../assets/js/pages/summernote/summernote-data.js"></script>
+
+	<!-- end js include path -->
+
+
+
+</body>
+
+</html>
